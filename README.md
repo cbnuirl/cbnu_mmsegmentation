@@ -1,14 +1,14 @@
 # Semantic Segmentation with HRNet + OCR on MORAI dataset
 
-This repository is based on [Swin-Transformer-Object-Detection](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection) and [mmdetection](https://github.com/open-mmlab/mmdetection). All configurations and codes were revised for MORAI dataset.
+This repository is based on [HRNet + OCR](https://github.com/HRNet/HRNet-Semantic-Segmentation) and [mmsegmentation](https://github.com/open-mmlab/mmsegmentation). All configurations and codes were revised for MORAI dataset.
 
 ## Results and Models
 
-### Swin-L + FPN + Cascade R-CNN
+### HRNet + OCR
 
-| Dataset | Lr Schd(Epoch) | box AP(vehicle) | config | log | model |
+| Dataset | Lr Schd(Epoch) | mIoU(vehicle, freespace, whiteLane, yellowLane, trafficSign, background) | config | log | model |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| Real | 36 | 85.8 | [config](configs/swin/cascade_mask_rcnn_swin_large_patch4_window7_mstrain_480-800_giou_4conv1f_adamw_3x_real.py) | [log](https://drive.google.com/file/d/15eQNQVo6GkVEQruNnyGUa1vfqzQ_HPZX/view?usp=share_link) | [model] |
+| Real | 36 | 64.13 | [config](configs/swin/cascade_mask_rcnn_swin_large_patch4_window7_mstrain_480-800_giou_4conv1f_adamw_3x_real.py) | [log](https://drive.google.com/file/d/15eQNQVo6GkVEQruNnyGUa1vfqzQ_HPZX/view?usp=share_link) | [model] |
 | Daegu | 36 | 68.3 | [config](configs/swin/cascade_mask_rcnn_swin_large_patch4_window7_mstrain_480-800_giou_4conv1f_adamw_3x_morai_daegu.py) | [log](https://drive.google.com/file/d/1tYdIgFhjfbFgy4Hkm6ARBoFODyri2QdL/view?usp=share_link) | [model] |
 | Sejong BRT 1 | 36 | 70.5 | [config](configs/swin/cascade_mask_rcnn_swin_large_patch4_window7_mstrain_480-800_giou_4conv1f_adamw_3x_morai_sejong_1.py) | [log](https://drive.google.com/file/d/1w5hY-Gnq1xZFZPMTlxndfBPVBMTM31jX/view?usp=share_link) | [model] |
 | Sangam Edge | 36 | 71.1 | [config](configs/swin/cascade_mask_rcnn_swin_large_patch4_window7_mstrain_480-800_giou_4conv1f_adamw_3x_morai_sangam_edge.py) | [log](https://drive.google.com/file/d/1ZcHoSe4LyJZKgbCYGTfwSdYx8UtL9OTt/view?usp=share_link) | [model] |
