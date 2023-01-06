@@ -62,33 +62,46 @@ Sejong BRT 1 Edge:
 Please refer to [install.md](docs/install.md) for installation, dataset preparation and making configuration file.
 
 ### Testing, Demo
+
+**NOTE**: Change mmseg/datasets/custom.py if original image format is in .jpg
+
+```
+…
+def __init__(self,
+                 pipeline,
+                 img_dir,
+                 # img_suffix='_leftImg8bit.png',
+                 img_suffix='.png', -> Modify into ‘.jpg’
+…
+```
+
 ```
 # single-gpu testing
-python tools/test.py {CONFIG_FILE} {MODEL_FILE} --eval bbox \
-(--show-dir {LOCATION}) \
-(--options "classwise=True")
+python tools/test.py {CONFIG_FILE} {MODEL_FILE} --eval mIoU \
+(--show-dir {LOCATION})
 
 # multi-gpu testing
 (CUDA_VISIBLE_DEVICES={GPU_NUM}) \
-tools/dist_test.sh {CONFIG_FILE} {MODEL_FILE} {TOTAL_NUM_OF_GPU} --eval bbox \
-(--show-dir {LOCATION}) \
-(--options “classwise=True”)
+tools/dist_test.sh {CONFIG_FILE} {MODEL_FILE} {TOTAL_NUM_OF_GPU} --eval mIoU \
+(--show-dir {LOCATION})
 ```
 
---show-dir saves pictures of result, --options "classwise=True" shows average precision of all classes.
+--show-dir saves pictures of result.
 You can use --show in GUI environment.
+
+CUDA_VISIBLE_DEVICES can define which GPUs will be used. If not defined, they are used sequentially.
 
 Example:
 ```
 python tools/test.py \
-configs/swin/cascade_mask_rcnn_swin_base_patch4_window7_mstrain_480-800_giou_4conv1f_adamw_3x_morai_daegu.py \
-checkpoints/cascade_mask_rcnn_swin_base_patch4_window7_mstrain_480-800_giou_4conv1f_adamw_3x_morai_daegu.pth \
---eval bbox --show-dir result.bbox.daegu/ --options “classwise=True”
+configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_daegu.py \
+checkpoints/ocrnet_hr48_512x1024_160k_morai_daegu.pth \
+--eval mIoU --show-dir result.mIoU.daegu/
 
 CUDA_VISIBLE_DEVICES=0,1,3 tools/dist_test.sh \
-configs/swin/cascade_mask_rcnn_swin_base_patch4_window7_mstrain_480-800_giou_4conv1f_adamw_3x_morai_daegu.py \
-checkpoints/cascade_mask_rcnn_swin_base_patch4_window7_mstrain_480-800_giou_4conv1f_adamw_3x_morai_daegu.pth 3 \
---eval bbox --show-dir result.bbox.daegu/ --options “classwise=True”
+configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_daegu.py \
+checkpoints/ocrnet_hr48_512x1024_160k_morai_daegu.pth 3 \
+--eval mIoU --show-dir result.mIoU.daegu/
 ```
 
 ### Training
@@ -103,18 +116,18 @@ python tools/train.py {CONFIG_FILE}
 
 Example:
 ```
-python tools/train.py configs/swin/cascade_mask_rcnn_swin_base_patch4_window7_mstrain_480-800_giou_4conv1f_adamw_3x_morai_daegu.py
+python tools/train.py configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_daegu.py
 
 CUDA_VISIBLE_DEVICES=0,1,3 tools/dist_train.sh \
-configs/swin/cascade_mask_rcnn_swin_base_patch4_window7_mstrain_480-800_giou_4conv1f_adamw_3x_morai_daegu.py 3
+configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_daegu.py 3
 ```
 
-## Citing Swin Transformer
+## Citing mmsegmentation
 ```
-@article{liu2021Swin,
-  title={Swin Transformer: Hierarchical Vision Transformer using Shifted Windows},
-  author={Liu, Ze and Lin, Yutong and Cao, Yue and Hu, Han and Wei, Yixuan and Zhang, Zheng and Lin, Stephen and Guo, Baining},
-  journal={arXiv preprint arXiv:2103.14030},
-  year={2021}
+@misc{mmseg2020,
+    title={{MMSegmentation}: OpenMMLab Semantic Segmentation Toolbox and Benchmark},
+    author={MMSegmentation Contributors},
+    howpublished = {\url{https://github.com/open-mmlab/mmsegmentation}},
+    year={2020}
 }
 ```
