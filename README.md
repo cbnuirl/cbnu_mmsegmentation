@@ -121,13 +121,3 @@ python tools/train.py configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_daegu.py
 CUDA_VISIBLE_DEVICES=0,1,3 tools/dist_train.sh \
 configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_daegu.py 3
 ```
-
-## Citing mmsegmentation
-```
-@misc{mmseg2020,
-    title={{MMSegmentation}: OpenMMLab Semantic Segmentation Toolbox and Benchmark},
-    author={MMSegmentation Contributors},
-    howpublished = {\url{https://github.com/open-mmlab/mmsegmentation}},
-    year={2020}
-}
-```
