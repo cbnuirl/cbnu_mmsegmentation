@@ -10,11 +10,11 @@ Class accuracy is IoU(Intersection over Union).
 
 | Dataset | Iter | vehicle | bus | truck | freespace | roadMark | whiteLane | yellowLane | trafficSign | fence | background | config | log | model |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Real | 160k | 93.29 | 89.92 | 87.72 | 94.94 | 61.22 | 87.81 | 79.86 | 66.3 | 91.08 | 97.85 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_real.py) | [log](https://drive.google.com/file/d/1mlQ0PNpR6onGbAYglsb5qQkZ8w7acRdK/view?usp=share_link) | [model] |
-| Daegu | 160k | 93.16 | 71.36 | 87.35 | 98.03 | 82.69 | 83.64 | 84.3 | 71.6 | 83.87 | 99.58 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_daegu.py) | [log](https://drive.google.com/file/d/1t1xb1mEck7aoTTl-186CcXwSIMzu4Y1S/view?usp=share_link) | [model] |
-| Sejong BRT 1 | 160k | 55.83 | 75.51 | 53.52 | 98.67 | 66.46 | 82.2 | 63.77 | 72.14 | X | 99.83 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_sejong_1.py) | [log](https://drive.google.com/file/d/13Qjd1q-fx2yS7KiZMVKHh_pdwiv-mjMW/view?usp=share_link) | [model] |
-| Sangam Edge | 160k | 84.57 | 0.0 | 0.0 | 97.77 | 82.93 | 79.45 | 84.59 | 91.56 | 92.47 | 99.03 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_sangam_edge.py) | [log](https://drive.google.com/file/d/1mHIskUGH0-CAmaZo3Is1HtZrc2k0NOyC/view?usp=share_link) | [model] |
-| Sejong BRT 1 Edge | 160k | 53.91 | 0.0 | 0.0 | 98.4 | X | 92.01 | 35.98 | 0.0 | X | 99.56 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_sejong_1_edge.py) | [log](https://drive.google.com/file/d/133zjdQnpArwUgwNzlFYfAEZwLXKxXJVc/view?usp=share_link) | [model] |
+| Real | 160k | 93.29 | 89.92 | 87.72 | 94.94 | 61.22 | 87.81 | 79.86 | 66.3 | 91.08 | 97.85 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_real.py) | [log](https://drive.google.com/file/d/1mlQ0PNpR6onGbAYglsb5qQkZ8w7acRdK/view?usp=share_link) | [model](https://drive.google.com/file/d/1rNg7YLrdB3ayJ_t77kTMclRxeoW3RljC/view?usp=share_link) |
+| Daegu | 160k | 93.16 | 71.36 | 87.35 | 98.03 | 82.69 | 83.64 | 84.3 | 71.6 | 83.87 | 99.58 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_daegu.py) | [log](https://drive.google.com/file/d/1t1xb1mEck7aoTTl-186CcXwSIMzu4Y1S/view?usp=share_link) | [model](https://drive.google.com/file/d/1JGE2u6HHDiVyXcvBampTPgbIJXV_a6hn/view?usp=share_link) |
+| Sejong BRT 1 | 160k | 55.83 | 75.51 | 53.52 | 98.67 | 66.46 | 82.2 | 63.77 | 72.14 | X | 99.83 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_sejong_1.py) | [log](https://drive.google.com/file/d/13Qjd1q-fx2yS7KiZMVKHh_pdwiv-mjMW/view?usp=share_link) | [model](https://drive.google.com/file/d/12_mVTloAo6phF1Im6h6YQ1eyHPyuPVYn/view?usp=share_link) |
+| Sangam Edge | 160k | 84.57 | 0.0 | 0.0 | 97.77 | 82.93 | 79.45 | 84.59 | 91.56 | 92.47 | 99.03 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_sangam_edge.py) | [log](https://drive.google.com/file/d/1mHIskUGH0-CAmaZo3Is1HtZrc2k0NOyC/view?usp=share_link) | [model](https://drive.google.com/file/d/13-FQY6z45CZEJKNptvQ7dSl-V-C7qVLl/view?usp=share_link) |
+| Sejong BRT 1 Edge | 160k | 53.91 | 0.0 | 0.0 | 98.4 | X | 92.01 | 35.98 | 0.0 | X | 99.56 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_sejong_1_edge.py) | [log](https://drive.google.com/file/d/133zjdQnpArwUgwNzlFYfAEZwLXKxXJVc/view?usp=share_link) | [model](https://drive.google.com/file/d/16Pz3m6UN4ioqcYkV5A-uJbgMybvy-neZ/view?usp=share_link) |
 
 Some of the classes not included in data or in small amounts.
 
@@ -42,8 +42,8 @@ Sejong BRT 1 Edge:
 
 | Dataset | Iter | vehicle | bus | truck | freespace | roadMark | whiteLane | yellowLane | trafficSign | fence | background | config | log | model |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Sejong BRT 1 | 160k | 86.25 | 77.94 | 62.12 | 95.82 | 49.5 | 82.73 | 74.57 | 37.21 | 67.79 | 97.68 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_sejong_1_mix.py) | [log](https://drive.google.com/file/d/1yw89dC9GdyRMNJ_AjxT0m0z7y28DSj2T/view?usp=share_link) | [model] |
-| Sejong BRT 1 Edge | 160k | 84.95 | 68.66 | 20.02 | 94.88 | 0.94 | 82.81 | 72.19 | 0.0 | 49.82 | 94.42 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_sejong_1_edge_mix.py) | [log](https://drive.google.com/file/d/1N1agPFDpaQZMC-7Jn0BZ8zeCHnkFhnWr/view?usp=share_link) | [model] |
+| Sejong BRT 1 | 160k | 86.25 | 77.94 | 62.12 | 95.82 | 49.5 | 82.73 | 74.57 | 37.21 | 67.79 | 97.68 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_sejong_1_mix.py) | [log](https://drive.google.com/file/d/1yw89dC9GdyRMNJ_AjxT0m0z7y28DSj2T/view?usp=share_link) | [model](https://drive.google.com/file/d/1oFLz7R0AAVO1YsqAZOLKi9hVJ-Yfhmae/view?usp=share_link) |
+| Sejong BRT 1 Edge | 160k | 84.95 | 68.66 | 20.02 | 94.88 | 0.94 | 82.81 | 72.19 | 0.0 | 49.82 | 94.42 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_sejong_1_edge_mix.py) | [log](https://drive.google.com/file/d/1N1agPFDpaQZMC-7Jn0BZ8zeCHnkFhnWr/view?usp=share_link) | [model](https://drive.google.com/file/d/1l-1pCv7qx9gqb9DBA4vJ86e-kHNfcACn/view?usp=share_link) |
 
 Some of the classes not included in data or in small amounts.
 
