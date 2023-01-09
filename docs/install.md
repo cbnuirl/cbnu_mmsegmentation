@@ -260,6 +260,8 @@ data
 ```
 Validation set that will not be used can be removed.
 
+**NOTE**: Original image format(.png or .jpg) and label image format(labelImg.png) should be same between real and synthetic data.
+
 If you want to use pre-trained model to continue training or fine-tuning, add configuration file:
 ```
 _base_ = …
