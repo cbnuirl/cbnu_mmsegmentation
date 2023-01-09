@@ -42,18 +42,28 @@ Sejong BRT 1 Edge:
 
 | Dataset | Iter | vehicle | bus | truck | freespace | roadMark | whiteLane | yellowLane | trafficSign | fence | background | config | log | model |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Daegu | 160k | 89.72 | 67.8 | 64.09 | 95.72 | 40.56 | 83.04 | 75.65 | 41.92 | 63.48 | 97.16 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_daegu_mix.py) | [log](https://drive.google.com/file/d/1VQhBiCMSraq293UvuUf_ZmVHm-ju5Ogm/view?usp=share_link) | [model] |
 | Sejong BRT 1 | 160k | 86.25 | 77.94 | 62.12 | 95.82 | 49.5 | 82.73 | 74.57 | 37.21 | 67.79 | 97.68 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_sejong_1_mix.py) | [log](https://drive.google.com/file/d/1yw89dC9GdyRMNJ_AjxT0m0z7y28DSj2T/view?usp=share_link) | [model](https://drive.google.com/file/d/1oFLz7R0AAVO1YsqAZOLKi9hVJ-Yfhmae/view?usp=share_link) |
+| Sangam Edge | 160k | 89.55 | 68.71 | 65.34 | 95.9 | 49.17 | 84.86 | 73.56 | 38.53 | 80.18 | 97.96 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_sangam_edge_mix.py) | [log](https://drive.google.com/file/d/1yfHDkCPep5LRI5Z0f2PJMjctQAXjZ1I_/view?usp=share_link) | [model] |
 | Sejong BRT 1 Edge | 160k | 84.95 | 68.66 | 20.02 | 94.88 | 0.94 | 82.81 | 72.19 | 0.0 | 49.82 | 94.42 | [config](configs/ocrnet/ocrnet_hr48_512x1024_160k_morai_sejong_1_edge_mix.py) | [log](https://drive.google.com/file/d/1N1agPFDpaQZMC-7Jn0BZ8zeCHnkFhnWr/view?usp=share_link) | [model](https://drive.google.com/file/d/1l-1pCv7qx9gqb9DBA4vJ86e-kHNfcACn/view?usp=share_link) |
 
 Some of the classes not included in data or in small amounts.
 
+Daegu:
+
+![image](https://user-images.githubusercontent.com/121915405/211253380-c639c2e3-4cd9-4849-9e89-34436de81e53.png)
+
 Sejong BRT 1:
 
-![image](https://user-images.githubusercontent.com/121915405/210933760-c69e0485-b3ca-46ff-9f21-64690ec652bb.png)
+![image](https://user-images.githubusercontent.com/121915405/211253399-25dfc503-1a93-44e3-acba-83f800a4f543.png)
+
+Sangam Edge:
+
+![image](https://user-images.githubusercontent.com/121915405/211253435-b15a432a-dcf1-4695-a8e1-e87ed6bfd038.png)
 
 Sejong BRT 1 Edge:
 
-![image](https://user-images.githubusercontent.com/121915405/210933781-21bbb65f-1c52-41aa-99eb-50a822c5ee11.png)
+![image](https://user-images.githubusercontent.com/121915405/211253467-0ab96762-02c2-4749-a285-455fa177a3ff.png)
 
 ## Usage
 
