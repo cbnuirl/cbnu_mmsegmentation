@@ -36,7 +36,7 @@ sudo docker build –t cbnuirl/mmseg_cbnu:1.0 docker/
 ## Docker Container
 
 ```
-sudo docker run (--gpus all) --shm-size=8g –it –v —name {CONTAINER_NAME} \
+sudo docker run (--gpus all) --shm-size=8g –it –v --name {CONTAINER_NAME} \
 {WORK_DIR}:/mmsegmentation cbnuirl/mmseg_cbnu:1.0
 ```
 
