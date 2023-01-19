@@ -153,6 +153,7 @@ PALETTE = [[255, 90, 241], [66, 7, 158], [0, 243, 64], [248, 158, 235], [211, 22
 		[247, 234, 110], [0, 0, 0], [210, 229, 168]]
 ```
 
+Exit docker bash.
 Then, run:
 ```
 pip install tqdm numpy opencv-python # If not installed
