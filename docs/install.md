@@ -36,11 +36,9 @@ sudo docker build –t cbnuirl/mmseg_cbnu:1.0 docker/
 ## Docker Container
 
 ```
-sudo docker run (--gpus all) --name {CONTAINER_NAME} --shm-size=8g –it –v \
+sudo docker run --gpus all --name {CONTAINER_NAME} --shm-size=8g –it –v \
 {WORK_DIR}:/mmsegmentation cbnuirl/mmseg_cbnu:1.0
 ```
-
---gpus all for multi-GPU. Exclude when using single-GPU.
 
 If you want to change into container bash:
 ```
